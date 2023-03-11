@@ -36,13 +36,13 @@ class Head {
   
   
   constructor() {
-		this.body = [];
+    this.body = [];
     this.x = width/2;
     this.y = height/2;
     this.direction = 0;
     this.speed = 3;
-		this.snakeLength = 100;
-		this.score = 0;
+    this.snakeLength = 100;
+    this.score = 0;
   }
   
   // ACTIONS
@@ -95,10 +95,10 @@ class Tail {
 class Food { 
   
   constructor(_parent) {
-		this.speed = 2;
-		this.size=random(5, 9);
-		this.floatVar = false;
-		this.ate = false;
+    this.speed = 2;
+    this.size=random(5, 14);
+    this.floatVar = false;
+    this.ate = false;
     this.c = randColor();
     this.x = parseInt(random(0,width+1));
     this.y = parseInt(random(0,height+1));
